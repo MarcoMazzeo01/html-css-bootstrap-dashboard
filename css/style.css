@@ -10,9 +10,25 @@
 
 
 /* * NAVBAR * */
-.navbar {
+body > .navbar {
+    background-color: white;
     min-height: var(--navbar-height);
 }
+
+.navbar-brand img:first-child { /* dekstop logo */
+    display: block;
+    width: 200px;
+}
+
+.navbar-brand img:last-child { /* mobile logo */
+    width: 3em;
+    display: none;
+}
+
+ #search-bar {
+    width: 100%;
+ }
+
 
 
 /* * SIDEBAR * */
