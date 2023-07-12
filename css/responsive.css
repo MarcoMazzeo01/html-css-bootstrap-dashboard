@@ -26,6 +26,12 @@
         width: 80%;
     }
 
+
+    /* * SIDEBAR * */
+    ._collapsable {
+        display: none;
+    }
+
 }
 
 
