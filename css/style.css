@@ -1,0 +1,48 @@
+:root {
+    --header-color: #1b72e8;
+    --sidebar-color: #071f36;
+
+    --navbar-height: 80px;
+    --sidebar-width-lg: 200px;
+    
+}
+
+
+/* * NAVBAR * */
+.navbar {
+    min-height: var(--navbar-height);
+}
+
+
+/* * SIDEBAR * */
+.sidebar {
+    background-color: var(--sidebar-color);
+    /* width: var(--sidebar-width-lg); */
+    height: calc(100vh - var(--navbar-height));
+   
+}
+
+
+/* * HEADER * */
+header {
+    background-color: var(--header-color);
+    width: 100%;
+    min-height: 100px;
+    
+}
+
+
+/* * MAIN CONTENT * */
+.main-content {
+    height: calc(100vh - var(--navbar-height));
+    background-color: pink;
+}
+
+main > .container {
+    height: 100%;
+    overflow-y: auto;
+}
+main {
+    height: 100%;
+    overflow-y: auto;
+}
