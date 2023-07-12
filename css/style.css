@@ -3,7 +3,7 @@
     --sidebar-color: #071f36;
 
     --navbar-height: 80px;
-    --sidebar-width-lg: 200px;
+    --sidebar-width-lg: 180px;
     
 }
 
@@ -17,7 +17,7 @@
 /* * SIDEBAR * */
 .sidebar {
     background-color: var(--sidebar-color);
-    /* width: var(--sidebar-width-lg); */
+    width: var(--sidebar-width-lg);
     height: calc(100vh - var(--navbar-height));
    
 }
@@ -33,16 +33,13 @@ header {
 
 
 /* * MAIN CONTENT * */
-.main-content {
+.main-container {
     height: calc(100vh - var(--navbar-height));
-    background-color: pink;
+
 }
 
-main > .container {
-    height: 100%;
-    overflow-y: auto;
-}
 main {
     height: 100%;
+    width: 100%;
     overflow-y: auto;
 }
