@@ -1,0 +1,19 @@
+/* ? TABLET ? */
+@media screen and (max-width: 768px) {
+
+    :root {
+        --sidebar-width: 100px;
+       
+    }
+
+}
+
+
+/* ? MOBILE ? */
+@media screen and (max-width: 576px) {
+
+    :root {
+        --header-height: 300px;
+    }
+    
+}

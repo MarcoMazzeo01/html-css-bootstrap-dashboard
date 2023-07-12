@@ -3,7 +3,8 @@
     --sidebar-color: #071f36;
 
     --navbar-height: 80px;
-    --sidebar-width-lg: 180px;
+    --sidebar-width: 200px;
+    --header-height: 100px;
     
 }
 
@@ -17,7 +18,7 @@
 /* * SIDEBAR * */
 .sidebar {
     background-color: var(--sidebar-color);
-    width: var(--sidebar-width-lg);
+    flex-basis: var(--sidebar-width);
     height: calc(100vh - var(--navbar-height));
    
 }
@@ -27,7 +28,7 @@
 header {
     background-color: var(--header-color);
     width: 100%;
-    min-height: 100px;
+    min-height: var(--header-height);
     
 }
 
