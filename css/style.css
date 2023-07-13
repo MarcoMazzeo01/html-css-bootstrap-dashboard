@@ -1,3 +1,4 @@
+/* GENERICS */
 :root {
     --header-color: #1b72e8;
     --sidebar-color: #071f36;
@@ -8,5 +9,59 @@
     
 }
 
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    height: calc( ( var(--fix-vh) * 100 ) - 60px);
+    overflow-y: auto;
+    margin-left: 65px;
+    background-color: red;
+}
+
 
 /* * NAVBAR * */
+#top-nav {
+    height: var(--navbar-height);
+}
+
+.resize_logo {
+    height: 60px;
+}
+
+
+/* * SIDEBAR * */
+.sidebar-nav{
+    height: calc(100vh - var(--navbar-height));
+    background-color: var(--sidebar-color);
+    background-image: url(../img/sidebar-bg.png);
+    color: white;
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+}
+
+.sidebar-nav li:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.sidebar-nav li a:hover{
+    color: white;
+}
+
+#sidebar-nav_desktop{
+    width: 150px;
+}
+
+#sidebar-nav_mobile{
+    width: 65px;
+}
