@@ -1,36 +1,12 @@
 @media screen and (max-width: 992px) {
-    /* #search-bar {
-        width: 70%;
-    } */
+
  }
 
 
 /* ? TABLET ? */
 @media screen and (max-width: 768px) {
 
-    :root {
-        --sidebar-width: 100px;
-       
-    }
 
-    /* * NAVBAR *  */
-    .navbar-brand img:first-child {
-        display: none;
-    }
-
-    .navbar-brand img:last-child {
-        display: block;
-    }
-
-    /* #search-bar {
-        width: 80%;
-    } */
-
-
-    /* * SIDEBAR * */
-    ._collapsable {
-        display: none;
-    }
 
 }
 
@@ -38,13 +14,6 @@
 /* ? MOBILE ? */
 @media screen and (max-width: 576px) {
 
-    :root {
-        --header-height: 300px;
-    }
 
-    /* * NAVBAR * */
-    /* #search-bar {
-        width: 60%;
-    } */
     
 }
