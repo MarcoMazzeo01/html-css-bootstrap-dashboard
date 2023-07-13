@@ -1,4 +1,3 @@
-/* GENERICS */
 :root {
     --header-color: #1b72e8;
     --sidebar-color: #071f36;
@@ -9,59 +8,61 @@
     
 }
 
-ul{
-    list-style-type: none;
-    padding: 0;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
-main{
-    height: calc( ( var(--fix-vh) * 100 ) - 60px);
-    overflow-y: auto;
-    margin-left: 65px;
-    background-color: red;
-}
-
 
 /* * NAVBAR * */
-#top-nav {
-    height: var(--navbar-height);
+body > .navbar {
+    background-color: white;
+    min-height: var(--navbar-height);
 }
 
-.resize_logo {
-    height: 60px;
+.navbar-brand img:first-child { /* dekstop logo */
+    display: block;
+    width: 200px;
 }
+
+.navbar-brand img:last-child { /* mobile logo */
+    width: 3em;
+    display: none;
+}
+
+ #search-bar {
+    width: 100%;
+ }
+
 
 
 /* * SIDEBAR * */
-.sidebar-nav{
-    height: calc(100vh - var(--navbar-height));
+.sidebar {
     background-color: var(--sidebar-color);
-    background-image: url(../img/sidebar-bg.png);
-    color: white;
-    position: fixed;
-    top: var(--navbar-height);
-    left: 0;
+    flex-basis: var(--sidebar-width);
+    height: calc(100vh - var(--navbar-height));
 }
 
-.sidebar-nav li:hover{
-    color: white;
-    background-color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
+
+/* * HEADER * */
+header {
+    background-color: var(--header-color);
+    width: 100%;
+    min-height: var(--header-height);
 }
 
-.sidebar-nav li a:hover{
-    color: white;
+h1 {
+    display: inline;
 }
 
-#sidebar-nav_desktop{
-    width: 150px;
+header .badge {
+    background-color: #165bba;
 }
 
-#sidebar-nav_mobile{
-    width: 65px;
+
+/* * MAIN CONTENT * */
+.main-container {
+    height: calc(100vh - var(--navbar-height));
+
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
 }
