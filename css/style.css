@@ -32,11 +32,17 @@ body > .navbar {
 
 
 /* * SIDEBAR * */
-.sidebar {
+.sidebar-desktop, .sidebar-mobile {
     background-color: var(--sidebar-color);
-    flex-basis: var(--sidebar-width);
+    width: var(--sidebar-width);
+    background-image: url(../img/sidebar-bg.png);
     height: calc(100vh - var(--navbar-height));
 }
+
+.sidebar-mobile {
+    display: none;
+}
+
 
 
 /* * HEADER * */

@@ -6,7 +6,17 @@
 /* ? TABLET ? */
 @media screen and (max-width: 768px) {
 
+    :root {
+        --sidebar-width: 100px;
+    }
 
+    .sidebar-mobile {
+        display: block;
+    }
+
+    .sidebar-desktop {
+        display: none;
+    }
 
 }
 
