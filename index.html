@@ -29,8 +29,8 @@
 
             <!-- logo -->
             <a class="navbar-brand" href="#">
-                <img src="./img/logo.svg" alt="">
-                <img src="./img/mobile-logo.png" alt="">
+                <img src="./img/logo.svg" class="d-none d-sm-block " alt="">
+                <img src="./img/mobile-logo.png" class="d-block d-sm-none" alt="">
             </a>
 
             <!-- search bar -->
@@ -151,12 +151,102 @@
                             <i class="fa-solid fa-plus"></i>
                         </button>
 
-                        <div class="offcanvas offcanvas-end my-offcanvas-size" tabindex="-1" id="offcanvas_student-form" aria-labelledby="offcanvasRightLabel">
+                        <!-- offcanvas -->
+                        <div class="offcanvas offcanvas-end my-offcanvas-size" tabindex="-1" id="offcanvas_student-form"  aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 class="offcanvas-title text-dark" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                        
+
+                            <div class="offcanvas-body text-dark">
+                                <div class="container-fluid">
+
+                                    <form>
+                                        <div class="row">
+
+                                            <!-- first name -->
+                                            <div class="col-12 col-md-6 text-start mb-3">
+                                                <label class="form-label" for="first-name">Nome</label>
+                                                <input class="form-control" type="text" id="first-name" name="first-name" required>
+                                            </div>
+
+                                            <!-- last name -->
+                                            <div class="col-12 col-md-6 text-start mb-3">
+                                                <label class="form-label" for="last-name">Cognome</label>
+                                                <input class="form-control" type="text" id="last-name" name="last-name" required>
+                                            </div>
+
+                                            <!-- email -->
+                                            <div class="col-12 col-md-6 text-start">
+                                                <label class="form-label" for="email">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" id="email" class="form-control" required>
+                                                </div>
+                                            </div>
+
+                                            <!-- password -->
+                                            <div class="col-12 col-md-6 text-start mb-3">
+                                                <label class="form-label" for="password">Password</label>
+                                                <input class="form-control" type="password" id="password" name="last-name" required>
+                                            </div>
+
+                                            <!-- address -->
+                                            <div class="col-12 text-start mb-3">
+                                                <label class="form-label" for="address">Indirizzo</label>
+                                                <input class="form-control" type="text" id="address" name="last-name" equired>
+                                            </div>
+
+                                            <!-- city -->
+                                            <div class="col-12 col-md-6 text-start mb-3">
+                                                <label class="form-label" for="city">Città</label>
+                                                <input class="form-control" type="text" id="city" name="last-name" required>
+                                            </div>
+
+                                            <!-- country -->
+                                            <div class="col-12 col-md-4 text-start mb-3">
+                                                <label class="form-label" for="state">Stato</label>
+                                                <select class="form-select" name="state" id="state">
+                                                    <option selected>Scegli...</option>
+                                                    <option value="it">Italia</option>
+                                                    <option value="en">Regno Unito</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- zip code -->
+                                            <div class="col-12 col-md-2 mb-3">
+                                                <label class="form-label" for="cap">CAP</label>
+                                                <input class="form-control" type="text" id="cap" name="last-name" required>
+                                            </div>
+
+                                            <!-- pic -->
+                                            <div class="col-12 text-start mb-3">
+                                                <label class="form-label" for="file">Foto</label>
+                                                <input type="file" id="file" class="form-control" required>
+                                            </div>
+
+                                            <!-- confirmation -->
+                                            <div class="col-12 mb-3">
+                                                <div class="form-check text-start ps-4">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="select-continue" required>
+                                                    <label class="form-check-label" for="select-continue">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <!-- send & reset -->
+                                            <div class="col-12 text-start">
+                                                <input class="btn btn-primary" type="submit" value="Salva">
+                                                <input class="btn btn-warning" type="reset" value="Svuota">
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -223,10 +313,12 @@
                                             <td><span class="badge bg-success">Done</span></td>
                                             <td>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
                                                 </div>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -237,10 +329,12 @@
                                             <td><span class="badge bg-success">Done</span></td>
                                             <td>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
                                                 </div>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -251,10 +345,12 @@
                                             <td><span class="badge bg-warning">Process</span></td>
                                             <td>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
                                                 </div>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -265,10 +361,12 @@
                                             <td><span class="badge bg-success">Done</span></td>
                                             <td>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
                                                 </div>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -279,10 +377,12 @@
                                             <td><span class="badge bg-danger">Failed</span></td>
                                             <td>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
                                                 </div>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -293,10 +393,12 @@
                                             <td><span class="badge bg-success">Done</span></td>
                                             <td>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
                                                 </div>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -307,10 +409,12 @@
                                             <td><span class="badge bg-danger">Failed</span></td>
                                             <td>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
                                                 </div>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
@@ -321,10 +425,12 @@
                                             <td><span class="badge bg-success">Done</span></td>
                                             <td>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-pencil"></i></button>
                                                 </div>
                                                 <div class="d-inline-block my-table-icon rounded-1">
-                                                    <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash"></i></button>
+                                                    <button type="button" class="btn btn-outline-secondary"><i
+                                                            class="fa-solid fa-trash"></i></button>
                                                 </div>
                                             </td>
                                         </tr>
