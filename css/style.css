@@ -44,7 +44,14 @@ header {
     background-color: var(--header-color);
     width: 100%;
     min-height: var(--header-height);
-    
+}
+
+h1 {
+    display: inline;
+}
+
+header .badge {
+    background-color: #165bba;
 }
 
 
