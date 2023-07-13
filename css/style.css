@@ -1,11 +1,9 @@
 :root {
-    --header-color: #1b72e8;
     --sidebar-color: #071f36;
 
     --navbar-height: 80px;
     --sidebar-width: 200px;
     --header-height: 100px;
-    
 }
 
 
@@ -44,19 +42,8 @@ body > .navbar {
 }
 
 
-
 /* * HEADER * */
-header {
-    background-color: var(--header-color);
-    width: 100%;
-    min-height: var(--header-height);
-}
-
-h1 {
-    display: inline;
-}
-
-header .badge {
+#main-header .badge {
     background-color: #165bba;
 }
 
